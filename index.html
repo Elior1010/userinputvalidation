@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message Access</title>
+    <!-- Personal name comment -->
+    <!-- Created by [Your Name Here] -->
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; }
+        .container { max-width: 600px; margin: auto; padding: 20px; background: white; border-radius: 8px; }
+        input, button { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .warning { color: red; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Enter Your Information</h2>
+    <!-- Form for user input -->
+    <form id="userInfoForm">
+        <input type="text" id="firstName" placeholder="First Name">
+        <input type="text" id="lastName" placeholder="Last Name">
+        <input type="text" id="zipCode" placeholder="Zip Code">
+        <button type="button" onclick="validateAndShowMessage()">Submit</button>
+    </form>
+    <div id="warning" class="warning"></div>
+    <div id="secretMessage"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
